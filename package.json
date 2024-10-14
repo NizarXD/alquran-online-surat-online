@@ -1,0 +1,30 @@
+{
+  "name": "jadwal-sholat",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "commit": "cz",
+    "dev": "turbo run dev --parallel",
+    "format": "prettier . --write",
+    "lint": "turbo run lint",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@jadwal-sholat/eslint-config": "workspace:*",
+    "@jadwal-sholat/typescript-config": "workspace:*",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.6.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "turbo": "^2.0.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "packageManager": "pnpm@8.6.10"
+}
